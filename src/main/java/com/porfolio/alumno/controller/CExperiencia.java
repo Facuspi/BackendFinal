@@ -1,10 +1,12 @@
 
 package com.porfolio.alumno.controller;
 
+import com.porfolio.alumno.dto.DtoExperiencia;
 import com.porfolio.alumno.entity.Experiencia;
 import com.porfolio.alumno.service.SExperiencia;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -50,5 +52,16 @@ public class CExperiencia {
      public void editaExperiencia (@RequestBody Experiencia exp){
          expServ.editarExperiencia(exp);
      }
+     
+     @PutMapping("/editar/{id}")
+   public void update(@PathVariable ("id") int id, @RequestBody DtoExperiencia dtoexp ){
+       Experiencia exp = expServ.getOne(id).get();
+       exp.setPuesto(dtoexp.getPuesto());
+       exp.setEmpresa(dtoexp.getEmpresa());
+       exp.setInicio(dtoexp.getInicio());
+       exp.setFin(dtoexp.getFin());
+       exp.setDescripcion(dtoexp.getDescripcion());
+       expServ.editarExperiencia(exp);
+   }
     
 }

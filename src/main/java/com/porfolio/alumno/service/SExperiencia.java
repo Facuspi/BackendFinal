@@ -5,6 +5,7 @@ import com.porfolio.alumno.entity.Experiencia;
 import com.porfolio.alumno.repository.RExperiencia;
 import jakarta.transaction.Transactional;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -37,4 +38,8 @@ public class SExperiencia {
         return exp;
     }
     
+    public Optional <Experiencia> getOne(int id){
+        return expRepo.findById(id);
+    }
+        
 }
