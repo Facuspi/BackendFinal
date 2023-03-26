@@ -23,6 +23,7 @@ com\porfolio\alumno\security\MainSecurity.class
 com\porfolio\alumno\security\jwt\JwtTokenFilter.class
 com\porfolio\alumno\dto\DtoFortaleza.class
 com\porfolio\alumno\dto\DtoProyecto.class
+.netbeans_automatic_build
 com\porfolio\alumno\service\SProyecto.class
 com\porfolio\alumno\service\SPersona.class
 com\porfolio\alumno\security\dto\JwtDto.class
