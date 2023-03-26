@@ -1,4 +1,5 @@
 com\porfolio\alumno\security\service\UserDetailsImpl.class
+com\porfolio\alumno\WebConfig.class
 com\porfolio\alumno\security\entity\UsuarioPrincipal.class
 com\porfolio\alumno\AlumnoApplication.class
 com\porfolio\alumno\service\SExperiencia.class

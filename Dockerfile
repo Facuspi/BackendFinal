@@ -1,4 +1,4 @@
-FROM amanazoncorretto: 11-alpine-jdk
-MAINTAINER Facundo Spinelli
-COPY  target/BackEndFinal-0.0.1-SNAPSHOT.jar facuspi.jar
-ENTRYPOINT ["java","-jar","/facuspi.jar"]
+FROM amanazoncorretto: 17
+MAINTAINER facundospinelli
+COPY  target/BackEndFinal-0.0.1-SNAPSHOT.jar BackEndFinal-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","/BackEndFinal-0.0.1-SNAPSHOT.jar"]
