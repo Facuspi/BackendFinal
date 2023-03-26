@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("experiencia")
+@RequestMapping("/experiencia")
 @CrossOrigin (origins = "https://frontendfinal-1120b.web.app")
 public class CExperiencia {
         
